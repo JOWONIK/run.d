@@ -10,6 +10,11 @@ def read_root():
     return {"Hello": "World"}
 
 
+@app.get("/apple")
+def apple():
+    return "apple JJang~?"
+
+
 @app.get("/items")
 def read_root():
     results = {
